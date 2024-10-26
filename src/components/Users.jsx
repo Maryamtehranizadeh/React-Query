@@ -38,7 +38,7 @@ function Users() {
       {isLoading && isFetching && <h1>Loading...</h1>}
       {!isLoading &&
         data.data.map((i) => (
-          <Link to="/:id" key={i.id}>
+          <Link to={`/users/${i.id}`} key={i.id} >
             <h3> {i.name}</h3>
           </Link>
         ))}
